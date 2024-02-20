@@ -1,10 +1,10 @@
 import unittest
-from player import PLAYER
+from player import Player
 class MyTestCase(unittest.TestCase):
     def test_uid(self):
         uid = 1
         name = "Abby"
-        comb = PLAYER(uid, name)
+        comb = Player(uid, name)
         uid_result = comb.uid
 
         self.assertEqual(uid_result, uid, "uid value is incorrect")
@@ -12,7 +12,7 @@ class MyTestCase(unittest.TestCase):
     def test_name(self):
         uid = 1
         name = "Page"
-        comb = PLAYER(uid, name)
+        comb = Player(uid, name)
         name_result = comb.name
 
         self.assertEqual(name_result, name, "name value is incorrect")
