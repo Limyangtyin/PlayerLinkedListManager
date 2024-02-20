@@ -3,9 +3,11 @@ class PLAYER:
         self.uid = uid
         self.name = name
 
+    @property
     def uid(self):
         return self.uid
 
+    @property
     def name(self):
         return self.name
 
