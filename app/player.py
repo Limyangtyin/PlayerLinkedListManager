@@ -12,4 +12,4 @@ class Player:
         return self._name
 
     def __str__(self):
-        return f"id is {self.uid}, name is {self.name}"
+        return f"Player name is {self._name} and id is {self._uid}"
